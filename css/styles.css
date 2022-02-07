@@ -159,6 +159,7 @@ body {
 .button.primary:hover {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  cursor: pointer;
 }
 
 .button.secondary:focus {
