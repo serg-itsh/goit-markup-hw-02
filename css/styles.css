@@ -9,6 +9,7 @@
 :root {
   --primary-text-color: rgba(0, 0, 0, 0.8);
   --title-text-color: #000000;
+  --title-text-color: #212121;
   --accent-color: #18a0fb;
   --primary-bg-color: #ffffff;
 }
@@ -16,14 +17,37 @@
 body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* ✅ Применится только к ссылкам, которые лежат внутри тега с классом social-links */
+
+.social-links a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .list {
   list-style: none;
+  text-decoration: none;
 }
+
+/* Logo */
 
 .logo {
   color: var(--title-text-color);
+  font-family: Raleway, sans-serif;
+  width: 700;
+
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 .logo:hover {
@@ -34,6 +58,12 @@ body {
 
 .site-nav .link {
   color: var(--accent-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .site-nav .link:hover,
@@ -43,39 +73,109 @@ body {
 
 .site-nav .link.current {
   color: var(--title-text-color);
+  text-decoration: none;
 }
 
 /* Hero */
 
 .hero-title {
   color: var(--title-text-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 /* Section */
 
 .section-title {
   color: var(--title-text-color);
+
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
-/* Features */
+.section-description {
+  font-size: 36px;
+  line-height: 1.39;
+}
 
-.feature-list .title {
+/* Features and Examples*/
+
+.feature-list .title,
+.work-list .title {
   color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* Examples */
+
+/* .work-list .title {
+  color: var(--title-text-color);
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+} */
+
+.feature-list .text {
+  color: #757575;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 .feature-list .link {
   color: var(--accent-color);
 }
 
-/* Examples */
-
-.work-list .title {
-  color: var(--title-text-color);
-}
-
 /* Batton */
 
 .batton {
   color: var(--title-text-color);
-  background-color: var(--primary-bg-color);
+  background-color: var(--primary-white-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-decoration: none;
+}
+
+.button.primary:hover {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.button.secondary:focus {
+  color: var(--accent-color);
+  background-color: var(--primary-white-color);
+}
+
+/* Footer */
+
+.copyright {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer {
+  background-color: #2f303a;
 }
