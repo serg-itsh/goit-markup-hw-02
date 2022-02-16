@@ -15,18 +15,18 @@
     <!-- Шапка сайта -->
   <header>
         <nav>
-            <a href="" class="logo">WebStudio</a>
+            <a href="" class="logo" lang="en">Web<span class="studio-dark">Studio</span></a>
 
             <ul class="site-nav list">
-                <li><a href="" class="link":hover>Студия</a></li>
+                <li><a href="" class="link current" :hover>Студия</a></li>
                 <li><a href="./portfolio.html" class="link">Портфолио</a></li>
                 <li><a href="" class="link">Контакты</a></li>
             </ul>
         </nav>
 
         <ul class="site-nav list">
-            <li><a href="" class="link">info@devstudio.com</a></li>
-            <li><a href="" class="link">+38 096 111 11 11</a></li>
+            <li><a href="" class="link contacts">info@devstudio.com</a></li>
+            <li><a href="" class="link contacts">+38 096 111 11 11</a></li>
         </ul>
 
   </header>
@@ -35,28 +35,32 @@
   <main>
         <!-- Герой -->
         <section class="hero">
-            <h1 class="hero-title list">Эффективные решения<br /> для вашего бизнеса</h1>
-            <button type="button" class="button primary" :hover>Заказать услугу</button>
+            <div class="footer">
+                <h1 class="hero-title list">Эффективные решения<br /> для вашего бизнеса</h1>
+                <button class="button primary" type="button" :hover>
+                    <span class="button" :hover>Заказать услугу</span>
+                </button>
+            </div>
         </section>
 
         <!-- Преимущества -->
         <section class="section">
             <ul class="feature-list list">
                 <li>
-                    <h3 class="title">Внимание к деталям</h3>
-                    <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                    <h3 class="text-category">Внимание к деталям</h3>
+                    <p class="text-items">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
                 <li>
-                    <h3 class="title">Пунктуальность</h3>
-                    <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                    <h3 class="text-category">Пунктуальность</h3>
+                    <p class="text-items">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 </li>
                 <li>
-                    <h3 class="title">Планирование</h3>
-                    <p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                    <h3 class="text-category">Планирование</h3>
+                    <p class="text-items">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
                 <li>
-                    <h3 class="title">Современные технологии</h3>
-                    <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                    <h3 class="text-category">Современные технологии</h3>
+                    <p class="text-items">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
         </section>
@@ -84,24 +88,26 @@
 
             <ul class="list">
                 <li>
-                    <img src="./images/img.jpg" alt="Игорь Демьяненко, дизайнер продукта " width="270" />
-                    <h3>Игорь Демьяненко</h3>
-                    <p>Product Designer</p>
+                    <div>
+                        <img src="./images/img.jpg" alt="Игорь Демьяненко, дизайнер продукта " width="270" />
+                        <h3 class="feature-list text">Игорь Демьяненко</h3>
+                        <p class="feature-list text-category" lang="en">Product Designer</p>
+                    </div>                    
                 </li>
                 <li>
                     <img src="./images/img(1).jpg" alt="Ольга Репина, фронтенд-разработчик" width="270" />
-                    <h3>Ольга Репина</h3>
-                    <p>Frontend Developer</p>
+                    <h3 class="feature-list text">Ольга Репина</h3>
+                    <p class="feature-list text-category" lang="en">Frontend Developer</p>
                 </li>
                 <li>
                     <img src="./images/img(2).jpg" alt="Николай Тарасов, маркетолог" width="270" />
-                    <h3>Николай Тарасов</h3>
-                    <p>Marketing</p>
+                    <h3 class="feature-list text">Николай Тарасов</h3>
+                    <p class="feature-list text-category" lang="en">Marketing</p>
                 </li>
                 <li>
                     <img src="./images/img(3).jpg" alt="Михаил Ермаков, дизайнер пользовательского интерфейса" width="270" />
-                    <h3>Михаил Ермаков</h3>
-                    <p>UI Designer</p>
+                    <h3 class="feature-list text">Михаил Ермаков</h3>
+                    <p class="feature-list text-category" lang="en">UI Designer</p>
                 </li>
             </ul>
         </section>
@@ -111,7 +117,7 @@
     <!-- Я не джин 🧞 -->
   <footer>
         <div class="footer">
-            <a href="" class="logo">WebStudio</a>
+            <a href="" class="logo" lang="en">Web<span class="studio-white" lang="en">Studio</span></a>
 
             <address>
 
