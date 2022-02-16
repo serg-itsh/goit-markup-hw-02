@@ -69,7 +69,6 @@ body {
 
 .site-nav .link {
   color: var(--title-text-color);
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -87,7 +86,7 @@ body {
   text-decoration: none;
 }
 
-.site-nav .link.contacts {
+.site-nav .link-contacts {
   color: var(--contacts-colors);
   text-decoration: none;
 }
@@ -130,13 +129,8 @@ body {
 .feature-list .title,
 .work-list .title {
   color: var(--title-text-color);
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
   font-size: 18px;
   line-height: 2;
-
   letter-spacing: 0.06em;
 }
 
@@ -166,7 +160,7 @@ body {
   color: #212121;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   text-decoration: none;
@@ -175,20 +169,28 @@ body {
 .feature-list.text-category {
   color: #212121;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  text-align: center;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
   text-decoration: none;
 }
 
 .feature-list.text-items {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: #757575;
+}
+
+/* team */
+
+.feature-list.team-items {
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  text-decoration: none;
+  color: #757575;
 }
 
 /* Portfolio */
@@ -206,8 +208,7 @@ body {
 .feature-list.text-items-p {
   color: #757575;
   font-size: 16px;
-  line-height: 1.9;
-  text-align: center;
+  line-height: 1.88;
   letter-spacing: 0.03em;
   text-decoration: none;
 }
@@ -219,21 +220,29 @@ body {
 /* Batton */
 
 .button {
-  color: var(--primary-white-color);
-}
-
-.button.primary :hover {
-  color: var(--accent-color);
-  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
   background: #2196f3;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
-.button.secondary:focus {
-  color: var(--accent-color);
-  background-color: var(--primary-white-color);
+.filters-list-btn {
+  /* position: absolute; */
+  width: 128px;
+  height: 38px;
+  left: 576px;
+  top: 174px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  /* text-decoration: none; */
+}
+
+.filters-btn:hover,
+.filters-btn:focus {
+  color: var(--primary-color);
+  background-color: var(--accent-color);
   cursor: pointer;
 }
 
@@ -253,9 +262,7 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
-
   letter-spacing: 0.03em;
-
   color: rgba(255, 255, 255, 0.6);
 }
 
